@@ -1,0 +1,7 @@
+<h1>論文一覧</h1>
+<ul>
+  <% @articles.each do |article| %>
+    <li><%= link_to articles.name, articles_path(article) %></li>
+  <% end %>
+</ul>
+<a href="<%= new_aticles_path %>">一覧へ戻る</a>
